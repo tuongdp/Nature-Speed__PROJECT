@@ -1,24 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nature</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nature</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <include src="modules/header.html">Loading...</include>
-    <div class="container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, incidunt!
-    </div>
-    <include src="modules/footer.html">Loading...</include>
-    <script type="text/javascript" src="./js//import.js"></script>
-  </body>
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/animate.min.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <include src="modules/header.html">Loading...</include>
+
+        <section class="main-slide owl-carousel owl-theme">
+            <div class="main-slide__item">
+                <a href="#">
+                    <img src="images/Main-Banner1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="main-slide__item">
+                <a href="#">
+                    <img src="images/Main-Banner2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="main-slide__item">
+                <a href="#">
+                    <img src="images/Main-Banner3.jpg" alt="" />
+                </a>
+            </div>
+        </section>
+        <!-- End .main-slide -->
+        <include src="modules/footer.html">Loading...</include>
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="./js/import.js"></script>
+        <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </body>
 </html>
