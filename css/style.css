@@ -361,7 +361,7 @@
 
 /* Header -- End */
 
-/* Service box -- Start*/
+/* Service box -- Begin*/
 .service-box .section-title,
 .service-box .section-subtitle {
     text-align: center;
@@ -399,4 +399,30 @@
 .service-box .service-box__lists .service-box--item .btn:hover {
     background: #c6eeff;
     color: var(--primary-color);
+}
+
+/* Service box -- End */
+/* Gallery box --Begin */
+.gallery-box .row > div {
+    padding: 0 10px;
+}
+
+.gallery-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-box .gallery-box__item {
+    margin-bottom: 20px;
+    height: 275px;
+    overflow: hidden;
+}
+
+.gallery-box .gallery-box__item:hover {
+    transition: all ease 0.3s;
+    opacity: 0.7;
+}
+
+.gallery-box .gallery-box--large {
+    height: 407px;
 }
