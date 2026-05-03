@@ -1013,6 +1013,10 @@
   margin-bottom: 5px;
 }
 
+.footer .footer--item h3 {
+  font-family: "PlayfairDisplay Bold", sans-serif;
+}
+
 .footer .footer--item.contact-item ul li::before {
   content: "";
   display: inline-block;
@@ -1078,3 +1082,10 @@
   margin: 0 2px;
 }
 /* Footer -- End */
+
+.back-to-top {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  z-index: 150;
+}
