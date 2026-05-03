@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Main Slider
     $(".main-slide").owlCarousel({
         loop: true,
         nav: false,
@@ -7,5 +8,24 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
+    });
+
+    // Product box slider
+    $(".product-box--lists").owlCarousel({
+        loop: true,
+        marin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 4,
+            },
+        },
     });
 });
