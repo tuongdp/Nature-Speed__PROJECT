@@ -1,0 +1,79 @@
+/* Xử lý mũi tên slide với màn hình <1300 */
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+  .container {
+    max-width: 90%;
+  }
+  .header .header__inner .col-lg-2 {
+    max-width: calc(2.5 / 12 * 100%);
+    flex-basis: calc(2.5 / 12 * 100%);
+  }
+
+  .header .header__inner .col-lg-6 {
+    max-width: calc(5.5 / 12 * 100%);
+    flex-basis: calc(5.5 / 12 * 100%);
+  }
+}
+
+/* Xử lý màn hình desktop small */
+@media screen and (max-width: 1199px) {
+  .owl-nav {
+    display: none !important;
+  }
+
+  .header .header__top-bar .header__top-bar--left,
+  .header .header__top-bar .header__top-bar--right {
+    text-align: center;
+  }
+
+  .primary-menu {
+    display: none !important;
+  }
+
+  .header .header__inner .row > div:nth-of-type(1) {
+    order: 1;
+  }
+  .header .header__inner .row > div:nth-of-type(2) {
+    order: 2;
+    text-align: center;
+  }
+  .header .header__inner .row > div:nth-of-type(3) {
+    order: 4;
+  }
+  .header .header__inner .row > div:nth-of-type(4) {
+    order: 3;
+  }
+  .header .header__inner .header__inner--cart {
+    justify-content: center;
+  }
+
+  .header .menu-toggle {
+    display: flex;
+    align-items: center;
+  }
+
+  .header .menu-toggle label {
+    display: block;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    padding: 5px 10px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .header #toggle-menu:checked ~ .primary-menu {
+    display: block !important;
+  }
+
+  .header .primary-menu ul li {
+    display: block !important;
+  }
+
+  .header .primary-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 150;
+    background: var(--primary-color);
+  }
+}

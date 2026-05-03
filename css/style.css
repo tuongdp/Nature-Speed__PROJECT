@@ -124,6 +124,11 @@
   color: var(--primary-color);
 }
 
+.header .menu-toggle,
+.header #toggle-menu {
+  display: none;
+}
+
 /* Primary menu dropdown */
 .header .header__inner .primary-menu > ul > li ul {
   display: none;
