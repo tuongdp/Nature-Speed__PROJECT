@@ -538,7 +538,8 @@
 }
 
 .product-box .product-box--lists:hover .owl-nav button,
-.news-box .news-box__lists:hover .owl-nav button {
+.news-box .news-box__lists:hover .owl-nav button,
+.brand-box .brand-box__list:hover .owl-nav button {
     opacity: 1 !important;
 }
 
@@ -649,7 +650,8 @@
 }
 
 .product-box .owl-theme .owl-nav,
-.news-box .owl-theme .owl-nav {
+.news-box .owl-theme .owl-nav,
+.brand-box .owl-theme .owl-nav {
     position: absolute;
     display: flex;
     align-items: center;
@@ -660,7 +662,9 @@
 .product-box .owl-theme .owl-nav button.owl-next,
 .product-box .owl-theme .owl-nav button.owl-prev,
 .news-box .owl-theme .owl-nav button.owl-next,
-.news-box .owl-theme .owl-nav button.owl-prev {
+.news-box .owl-theme .owl-nav button.owl-prev,
+.brand-box .owl-theme .owl-nav button.owl-next,
+.brand-box .owl-theme .owl-nav button.owl-prev {
     height: 36px;
     width: 48px;
     background: url("../images/sprite.png") no-repeat;
@@ -671,12 +675,14 @@
 }
 
 .product-box .owl-theme .owl-nav button.owl-prev,
-.news-box .owl-theme .owl-nav button.owl-prev {
+.news-box .owl-theme .owl-nav button.owl-prev,
+.brand-box .owl-theme .owl-nav button.owl-prev {
     left: -5%;
     background-position: 0 -53px;
 }
 .product-box .owl-theme .owl-nav button.owl-next,
-.news-box .owl-theme .owl-nav button.owl-next {
+.news-box .owl-theme .owl-nav button.owl-next,
+.brand-box .owl-theme .owl-nav button.owl-next {
     right: -5%;
     background-position: 0 -168px;
 }
@@ -684,21 +690,26 @@
 .product-box .owl-theme .owl-nav button.owl-next span,
 .product-box .owl-theme .owl-nav button.owl-prev span,
 .news-box .owl-theme .owl-nav button.owl-next span,
-.news-box .owl-theme .owl-nav button.owl-prev span {
+.news-box .owl-theme .owl-nav button.owl-prev span,
+.brand-box .owl-theme .owl-nav button.owl-next span,
+.brand-box .owl-theme .owl-nav button.owl-prev span {
     display: none;
 }
 
 .product-box .owl-theme .owl-nav button.owl-prev:hover,
-.news-box .owl-theme .owl-nav button.owl-prev:hover {
+.news-box .owl-theme .owl-nav button.owl-prev:hover,
+.brand-box .owl-theme .owl-nav button.owl-prev:hover {
     background-position: 0 -111px;
 }
 .product-box .owl-theme .owl-nav button.owl-next:hover,
-.news-box .owl-theme .owl-nav button.owl-next:hover {
+.news-box .owl-theme .owl-nav button.owl-next:hover,
+.brand-box .owl-theme .owl-nav button.owl-next:hover {
     background-position: 0 -226px;
 }
 
 .product-box .owl-carousel .owl-stage-outer,
-.news-box .owl-carousel .owl-stage-outer {
+.news-box .owl-carousel .owl-stage-outer,
+.brand-box .owl-carousel .owl-stage-outer {
     z-index: 50;
 }
 
@@ -900,3 +911,23 @@
 }
 
 /* News box -- End */
+
+/* Brand box -- Begin */
+.brand-box .brand-box__list img {
+    opacity: 0.6;
+}
+
+.brand-box .brand-box__list img:hover {
+    opacity: 1;
+}
+
+.brand-box .section-title,
+.brand-box .section-subtitle {
+    text-align: center;
+}
+
+.brand-box .brand-box__list {
+    margin-top: 20px;
+}
+
+/* Brand box -- End */
