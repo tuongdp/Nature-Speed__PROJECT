@@ -13,7 +13,7 @@ $(document).ready(function () {
     // Product box slider
     $(".product-box--lists").owlCarousel({
         loop: true,
-        marin: 10,
+        margin: 10,
         nav: true,
         dots: false,
         responsive: {
@@ -38,5 +38,24 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
+    });
+
+    // News on slider
+    $(".news-box__lists").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+            },
+        },
     });
 });

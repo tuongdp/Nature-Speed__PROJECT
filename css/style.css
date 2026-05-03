@@ -537,7 +537,8 @@
     opacity: 1;
 }
 
-.product-box .product-box--lists:hover .owl-nav button {
+.product-box .product-box--lists:hover .owl-nav button,
+.news-box .news-box__lists:hover .owl-nav button {
     opacity: 1 !important;
 }
 
@@ -647,7 +648,8 @@
     color: var(--primary-color);
 }
 
-.product-box .owl-theme .owl-nav {
+.product-box .owl-theme .owl-nav,
+.news-box .owl-theme .owl-nav {
     position: absolute;
     display: flex;
     align-items: center;
@@ -656,7 +658,9 @@
 }
 
 .product-box .owl-theme .owl-nav button.owl-next,
-.product-box .owl-theme .owl-nav button.owl-prev {
+.product-box .owl-theme .owl-nav button.owl-prev,
+.news-box .owl-theme .owl-nav button.owl-next,
+.news-box .owl-theme .owl-nav button.owl-prev {
     height: 36px;
     width: 48px;
     background: url("../images/sprite.png") no-repeat;
@@ -666,28 +670,35 @@
     z-index: 55;
 }
 
-.product-box .owl-theme .owl-nav button.owl-prev {
+.product-box .owl-theme .owl-nav button.owl-prev,
+.news-box .owl-theme .owl-nav button.owl-prev {
     left: -5%;
     background-position: 0 -53px;
 }
-.product-box .owl-theme .owl-nav button.owl-next {
+.product-box .owl-theme .owl-nav button.owl-next,
+.news-box .owl-theme .owl-nav button.owl-next {
     right: -5%;
     background-position: 0 -168px;
 }
 
 .product-box .owl-theme .owl-nav button.owl-next span,
-.product-box .owl-theme .owl-nav button.owl-prev span {
+.product-box .owl-theme .owl-nav button.owl-prev span,
+.news-box .owl-theme .owl-nav button.owl-next span,
+.news-box .owl-theme .owl-nav button.owl-prev span {
     display: none;
 }
 
-.product-box .owl-theme .owl-nav button.owl-prev:hover {
+.product-box .owl-theme .owl-nav button.owl-prev:hover,
+.news-box .owl-theme .owl-nav button.owl-prev:hover {
     background-position: 0 -111px;
 }
-.product-box .owl-theme .owl-nav button.owl-next:hover {
+.product-box .owl-theme .owl-nav button.owl-next:hover,
+.news-box .owl-theme .owl-nav button.owl-next:hover {
     background-position: 0 -226px;
 }
 
-.product-box .owl-carousel .owl-stage-outer {
+.product-box .owl-carousel .owl-stage-outer,
+.news-box .owl-carousel .owl-stage-outer {
     z-index: 50;
 }
 
@@ -815,3 +826,77 @@
     .support-box__item--inner::before {
     background-position: 0 -380px;
 }
+
+/* Support box -- End */
+
+/* News box -- Begin */
+.news-box .section-title,
+.news-box .section-subtitle {
+    text-align: center;
+}
+
+.news-box .section-subtitle {
+    font-family: sans-serif;
+}
+
+.news-box .news-box__lists {
+    margin: 30px 0;
+}
+
+.news-box .item__thumbnails {
+    position: relative;
+    color: #fff;
+    height: 230px;
+    overflow: hidden;
+}
+
+.news-box .item__thumbnails img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-box .item__thumbnails span {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+.news-box .item__thumbnails .overlay {
+    position: absolute;
+    inset: 0;
+    background: #0000003d;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+}
+
+.news-box .news-box--item:hover .overlay {
+    opacity: 1;
+}
+
+.news-box .item__title {
+    font-size: 1.14rem;
+    font-family: "Roboto SemiCondensed Bold", sans-serif;
+}
+
+.news-box .item__meta {
+    display: flex;
+    border-bottom: 1px solid #80808035;
+    padding-bottom: 10px;
+}
+
+.news-box .item__meta li {
+    margin-right: 10px;
+    font-style: italic;
+}
+
+.news-box .news-box--item p {
+    padding: 10px 0;
+}
+
+.news-box .news-box--item .btn:hover {
+    background: #c6eeff;
+    color: var(--primary-color);
+}
+
+/* News box -- End */
