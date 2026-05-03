@@ -695,7 +695,7 @@
 
 /* Testimonials box -- Begin */
 .testimonials-box {
-    background: url("../images/prlx.jpg");
+    background: url("../images/prlx.jpg") no-repeat fixed;
     background-size: cover;
     color: #fff;
     height: 60vh;
@@ -744,4 +744,74 @@
 
 .testimonials-box .owl-theme .owl-dots .owl-dot.active span {
     background: var(--primary-color);
+}
+
+/* Testimonials box -- End */
+
+/* Support box -- Begin */
+.support-box .support-box__item {
+    border: 10px solid #ececec;
+    padding: 20px;
+}
+
+.support-box .support-box__item h3,
+.support-box .support-box__item p {
+    margin: 0;
+}
+
+.support-box .support-box__item h3 {
+    font-size: 1.14rem;
+}
+
+.support-box .support-box__item .support-box__item--inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-box .support-box__item .support-box__item--inner::before {
+    content: "";
+    display: block;
+    width: 46px;
+    margin-right: 25px;
+    background: url("../images/cms-icon.png") no-repeat;
+    transition: all 0.2s linear;
+}
+
+.support-box .support-box__item.ship-icon .support-box__item--inner::before {
+    background-position: 0 0;
+    height: 30px;
+}
+.support-box .support-box__item.time-icon .support-box__item--inner::before {
+    background-position: 0 -149px;
+    height: 39px;
+}
+.support-box
+    .support-box__item.money-back-icon
+    .support-box__item--inner::before {
+    background-position: 0 -298px;
+    height: 41px;
+}
+
+.support-box .support-box__item:hover {
+    border-color: #c6eeef;
+}
+.support-box .support-box__item:hover p {
+    color: #253993;
+}
+
+.support-box
+    .support-box__item.ship-icon:hover
+    .support-box__item--inner::before {
+    background-position: 0 -74px;
+}
+.support-box
+    .support-box__item.time-icon:hover
+    .support-box__item--inner::before {
+    background-position: 0 -223px;
+}
+.support-box
+    .support-box__item.money-back-icon:hover
+    .support-box__item--inner::before {
+    background-position: 0 -380px;
 }
