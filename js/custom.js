@@ -28,4 +28,15 @@ $(document).ready(function () {
             },
         },
     });
+
+    // Testimonials slider
+    $(".testtimonials-box__slider").owlCarousel({
+        loop: true,
+        nav: false,
+        items: 1,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+    });
 });

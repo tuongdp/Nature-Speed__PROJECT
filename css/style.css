@@ -182,8 +182,7 @@
 }
 
 .header .header__inner .header__inner--cart span:first-child {
-    font-family: "RoboTo Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Roboto SemiCondensed Bold", sans-serif;
     color: var(--primary-color);
     text-transform: uppercase;
 }
@@ -690,4 +689,59 @@
 
 .product-box .owl-carousel .owl-stage-outer {
     z-index: 50;
+}
+
+/* Product box -- End */
+
+/* Testimonials box -- Begin */
+.testimonials-box {
+    background: url("../images/prlx.jpg");
+    background-size: cover;
+    color: #fff;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-box .testtimonials-box__slider {
+    text-align: center;
+    padding: 0 40px;
+}
+
+.testimonials-box .testtimonials-box__slider img {
+    width: auto;
+    display: inline-block;
+}
+
+.testimonials-box .testtimonials-box__slider h3 {
+    color: #c5eeff;
+    font-size: 2.2rem;
+    font-family: "PlayfairDisplay SemiBold", sans-serif;
+}
+
+.testimonials-box .testtimonials-box__slider .item__position {
+    font-size: 0.9rem;
+}
+
+.testimonials-box .owl-theme .owl-dots {
+    margin-top: 15px !important;
+}
+
+.testimonials-box .owl-theme .owl-dots .owl-dot span {
+    border-radius: 0;
+    margin: 3px 4px !important;
+    width: 6px;
+    height: 6px;
+}
+
+.testimonials-box .owl-theme .owl-dots .owl-dot {
+    border: 1px solid #fff;
+    margin: 0 3px;
+}
+.testimonials-box .owl-theme .owl-dots .owl-dot.active {
+    border-color: var(--primary-color);
+}
+
+.testimonials-box .owl-theme .owl-dots .owl-dot.active span {
+    background: var(--primary-color);
 }
