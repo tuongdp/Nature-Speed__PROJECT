@@ -11,7 +11,7 @@ $(document).ready(function () {
   });
 
   // Product box slider
-  $(".product-box--lists").owlCarousel({
+  $(".product-home .product-box--lists").owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
