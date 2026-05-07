@@ -26,7 +26,7 @@
           <li>
             <a href="#">Home</a>
           </li>
-          <li><a href="#">Electronics</a></li>
+          <li><span>Electronics</span></li>
         </ul>
       </div>
     </section>
@@ -35,13 +35,13 @@
     <div class="category-page section-box">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3 col-sm-3 sidebar-order">
             <include src="modules/sidebar.html">Loading...</include>
           </div>
-          <div class="col-lg-9">
+          <div class="col-lg-9 col-md-9 col-sm-9 content-order">
             <div class="product-filters">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-7">
                   <div class="product-filters--flex">
                     <div class="product-filters__item">
                       <label for="">Sort By: </label>
@@ -49,8 +49,8 @@
                         <option value="ASC" selected="selected">Default</option>
                         <option value="ASC">Name (A - Z)</option>
                         <option value="DESC">Name (Z - A)</option>
-                        <option value="ASC">Price (Low &gt; High)</option>
-                        <option value="DESC">Price (High &gt; Low)</option>
+                        <option value="ASC">Price (Low > High)</option>
+                        <option value="DESC">Price (High > Low)</option>
                         <option value="DESC">Rating (Highest)</option>
                         <option value="ASC">Rating (Lowest)</option>
                         <option value="ASC">Model (A - Z)</option>
@@ -73,7 +73,7 @@
                   <!-- End .product-filters -->
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-5">
                   <div class="product-filters--flex last">
                     <div class="product-filters__item">
                       <a href="#">Product Compare (0)</a>
@@ -106,7 +106,7 @@
               <div class="product-box__inner">
                 <div class="product-box--lists">
                   <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
                       <div class="product-box--item">
                         <div class="item__thumbnail">
                           <a href="#">
@@ -148,7 +148,7 @@
                       <!-- End .product-box--item -->
                     </div>
                     <!-- End .col-lg-4 -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
                       <div class="product-box--item">
                         <div class="item__thumbnail">
                           <a href="#">
@@ -190,7 +190,7 @@
                       <!-- End .product-box--item -->
                     </div>
                     <!-- End .col-lg-4 -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
                       <div class="product-box--item">
                         <div class="item__thumbnail">
                           <a href="#">
@@ -232,7 +232,7 @@
                       <!-- End .product-box--item -->
                     </div>
                     <!-- End .col-lg-4 -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
                       <div class="product-box--item">
                         <div class="item__thumbnail">
                           <a href="#">
@@ -274,7 +274,7 @@
                       <!-- End .product-box--item -->
                     </div>
                     <!-- End .col-lg-4 -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
                       <div class="product-box--item">
                         <div class="item__thumbnail">
                           <a href="#">
@@ -316,7 +316,7 @@
                       <!-- End .product-box--item -->
                     </div>
                     <!-- End .col-lg-4 -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
                       <div class="product-box--item">
                         <div class="item__thumbnail">
                           <a href="#">
@@ -364,6 +364,39 @@
               </div>
             </div>
             <!-- End. product-box -->
+            <div class="product-pagination">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 pagination--text">
+                  Showing 1 to 8 of 10 (2 Pages)
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <ul class="product-pagination__lists">
+                    <li>
+                      <a href="#">|<</a>
+                    </li>
+                    <li>
+                      <a href="#"><</a>
+                    </li>
+                    <li>
+                      <a href="#">1</a>
+                    </li>
+                    <li class="active">
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                    <li>
+                      <a href="#">></a>
+                    </li>
+                    <li>
+                      <a href="#">>|</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End .product-pagination -->
           </div>
         </div>
       </div>

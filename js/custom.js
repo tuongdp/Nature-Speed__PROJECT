@@ -18,10 +18,10 @@ $(document).ready(function () {
     dots: false,
     responsive: {
       0: {
-        items: 2,
+        items: 1,
       },
       768: {
-        items: 2,
+        items: 3,
       },
       992: {
         items: 4,
@@ -71,6 +71,25 @@ $(document).ready(function () {
       },
       600: {
         items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
+
+  // Product Gallery
+  $(".product-detail__images--gallery").owlCarousel({
+    loop: true,
+    margin: 15,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 5,
+      },
+      600: {
+        items: 5,
       },
       1000: {
         items: 5,

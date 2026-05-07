@@ -165,8 +165,35 @@
     align-items: center;
     justify-content: center;
   }
-}
 
+  .product-filters .product-filters--flex {
+    flex-wrap: nowrap;
+  }
+
+  .product-filters .product-filters--flex .product-filters__item {
+    display: flex;
+  }
+
+  .product-filters .product-filters--flex .product-filters__item:first-child {
+    flex-grow: 1;
+  }
+
+  .product-filters .product-filters--flex .product-filters__item {
+    flex-grow: 1;
+  }
+
+  .product-filters
+    .product-filters--flex:not(.last)
+    .product-filters__item
+    > * {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .product-filters .product-filters--flex.last {
+    justify-content: unset;
+  }
+}
 /* Màn hình điện thoại */
 @media screen and (max-width: 767px) {
   .header .header__top-bar .header__top-bar--left > li,
@@ -213,5 +240,34 @@
 
   .footer .footer--nav ul li {
     margin-bottom: 7px;
+  }
+
+  .sidebar-order {
+    order: 2;
+  }
+
+  .content-order {
+    order: 1;
+  }
+
+  .product-filters .product-filters--flex {
+    justify-content: center !important;
+  }
+
+  .product-filters > .row > * {
+    margin-bottom: 10px;
+  }
+
+  .product-pagination .pagination--text {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .product-pagination .product-pagination__lists {
+    text-align: center;
+  }
+
+  .banner-breadcrumbs ul {
+    display: block;
   }
 }
